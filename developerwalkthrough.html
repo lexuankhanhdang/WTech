@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Walkthrough</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0f0f13;
+      color: #e8e8f0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+    }
+
+    header {
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .video-wrapper {
+      width: 100%;
+      background: #1a1a24;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      border: 1px solid #2a2a3a;
+    }
+
+    video {
+      width: 100%;
+      display: block;
+      max-height: 540px;
+      background: #000;
+    }
+
+    .note {
+      margin-top: 16px;
+      font-size: 0.8rem;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Developer Walkthrough</h1>
+      <p>Group 2 — Web Design Video Tutorial</p>
+    </header>
+
+    <div class="video-wrapper">
+      <!--
+        Đặt file video cùng thư mục với file HTML này,
+        hoặc thay đường dẫn src bên dưới cho đúng vị trí file.
+      -->
+      <video controls preload="metadata">
+        <source src="Video_Tutorial.mov" type="video/mp4" />
+        <source src="Video_Tutorial.mov" type="video/quicktime" />
+        <a href="Video_Tutorial.mov">Tải video về xem</a>.
+      </video>
+    </div>
+
+    <p class="note">
+      Nếu video không phát được, hãy đặt file <code>Video_Tutorial.mov</code>
+      cùng thư mục với file HTML này.
+    </p>
+  </div>
+</body>
+</html>
